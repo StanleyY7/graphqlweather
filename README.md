@@ -14,7 +14,20 @@ The main reason for creating this is due to working on my own weather app I want
 
 ### How to Use
 
-- TBD
+Simple Example (repo: https://github.com/StanleyY7/weatherapp)
+
+Query (currently only can Query by City):
+
+        query GetWeather($city: String!) {
+          weather(city: $city) {
+            cityName
+            sunrise
+            currentWeather {
+              temp
+              tempLow
+            }
+          }
+        }
 
 ### Build Steps
 
