@@ -12,7 +12,9 @@ class WeatherAPI extends RESTDataSource {
 
   //main fetch call for weather query
   async getWeather({ city }) {
-    const response = await this.get(`?q=${city}&appid=${process.env.API_KEY}`); // for dev environment change process.env.API_KEY to API_KEY
+    const response = await this.get(
+      `?q=${city}&appid=${process.env.API_KEY}&units=metric`
+    ); // for dev environment change process.env.API_KEY to API_KEY
     return this.weatherReducer(response, city);
   }
   // async call will pass data to this reducer, which will return the data
