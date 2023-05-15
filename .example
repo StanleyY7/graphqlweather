@@ -1,2 +1,4 @@
-// const API_KEY = `Your Key Here`; // make sure to remove the "//"
+// For dev environemnt: create a secrets.js file in the same folder/directory as this .example file then do:
+
+// const API_KEY = `Enter Your Key Here`; // make sure to remove the "//"
 // module.exports = API_KEY; // has to be module.exports as NodeJs uses CommonJS

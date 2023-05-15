@@ -1,16 +1,18 @@
 const { RESTDataSource } = require("apollo-datasource-rest");
+require("dotenv").config();
 
+// For dev environment uncomment the below API_KEY variable
 // const API_KEY = require("../secrets");
 
 class WeatherAPI extends RESTDataSource {
   constructor() {
     super();
-
     this.baseURL = "http://api.openweathermap.org/data/2.5/weather";
   }
+
   //main fetch call for weather query
   async getWeather({ city }) {
-    const response = await this.get(`?q=${city}&appid=${process.env.API_KEY}`);
+    const response = await this.get(`?q=${city}&appid=${process.env.API_KEY}`); // for dev environment change process.env.API_KEY to API_KEY
     return this.weatherReducer(response, city);
   }
   // async call will pass data to this reducer, which will return the data
