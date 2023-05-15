@@ -8,6 +8,8 @@ Live version is available from this URL: https://weather-graphql.onrender.com/
 
 ![image](https://github.com/StanleyY7/graphqlweather/assets/119549394/4def042d-9552-4d13-b4f4-9fdae2a382dc)
 
+<img width="250" src="https://github.com/StanleyY7/graphqlweather/actions/workflows/main.yml/badge.svg"/>
+
 ### Overview/Purpose:
 
 The main reason for creating this is due to working on my own weather app I wanted to use a GraphQL Weather API. Upon searching I found this popular one: (https://github.com/konstantinmuenster/graphql-weather-api) however it no longer works as it is served over Heroku (I assume it runs on Heroku free tier which has been depracated so no longer being hosted). So I looked up guides/documents online and created my own GraphQL version/wrapper of the Open Weather Rest API.
