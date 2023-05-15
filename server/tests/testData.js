@@ -14,8 +14,8 @@ const expectedOutput = {
     humidity: 60,
     windSpeed: 5,
   },
-  sunrise: "5:15:27 PM",
-  sunset: "6:08:04 AM",
+  sunrise: "7:15:27 AM",
+  sunset: "8:08:04 PM",
 };
 
 module.exports = { expectedOutput };

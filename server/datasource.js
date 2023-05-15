@@ -22,6 +22,7 @@ class WeatherAPI extends RESTDataSource {
   weatherReducer(weather, city) {
     const sunrise = new Date(weather.sys.sunrise * 1000).toLocaleTimeString();
     const sunset = new Date(weather.sys.sunset * 1000).toLocaleTimeString();
+
     return {
       id: weather.id || 0,
       city: city,
