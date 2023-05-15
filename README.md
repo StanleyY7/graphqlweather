@@ -23,9 +23,11 @@ The main reason for creating this is due to working on my own weather app I want
       
 The server starts at http://localhost:4000/
 
+For dev environment follow the comments/steps on .example file and server/datasource.js.
+
 Tech Stack
 - NodeJs
-- Apollo Client
+- Apollo Server
 - GraphQL
 - JavaScript
 
