@@ -1,4 +1,3 @@
-const { RESTDataSource } = require("apollo-datasource-rest");
 let WeatherAPI = require("../datasource");
 const { expectedOutput } = require("./testData");
 
@@ -12,8 +11,8 @@ describe("Datasource Fetch Tests", () => {
   test("It should fetch data from the Open Weather Rest API and map it as GraphQL", async () => {
     WeatherAPI.get = jest.fn().mockResolvedValueOnce({
       sys: {
-        sunrise: 1621149327,
-        sunset: 1621195684,
+        sunrise: 1621149327, // tests may fail depending on locale time, can manually edit testData.js to pass
+        sunset: 1621195684, // tests may fail depending on locale time, can manually edit testData.js to pass
       },
       name: "City Name",
       coord: {
