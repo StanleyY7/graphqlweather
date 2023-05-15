@@ -1,0 +1,2 @@
+// const API_KEY = `Your Key Here`; // make sure to remove the "//"
+// module.exports = API_KEY; // has to be module.exports as NodeJs uses CommonJS

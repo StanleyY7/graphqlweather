@@ -1,0 +1,17 @@
+{
+  "name": "graphqlweather",
+  "version": "1.0.0",
+  "description": "Open Weather API wrapped in a GraphQL Wrapper and served live so that users can make requests to it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "node server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource-rest": "^3.7.0",
+    "apollo-server": "^3.12.0"
+  }
+}
